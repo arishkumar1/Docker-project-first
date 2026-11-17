@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login / Sign up</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="forms">
+      <section class="card">
+        <h1>Log in</h1>
+        <form action="/login" method="post">
+          <label for="login-email">Email</label>
+          <input id="login-email" name="email" type="email" autocomplete="email" required />
+
+          <label for="login-password">Password</label>
+          <input id="login-password" name="password" type="password" autocomplete="current-password" required />
+
+          <button type="submit">Log in</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h1>Sign up</h1>
+        <form action="/signup" method="post">
+          <label for="signup-name">Name</label>
+          <input id="signup-name" name="name" type="text" autocomplete="name" required />
+
+          <label for="signup-email">Email</label>
+          <input id="signup-email" name="email" type="email" autocomplete="email" required />
+
+          <label for="signup-password">Password</label>
+          <input id="signup-password" name="password" type="password" autocomplete="new-password" required />
+
+          <button type="submit">Create account</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
